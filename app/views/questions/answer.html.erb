@@ -1,4 +1,12 @@
-<h1>Réponse du Coach</h1>
+<div class="container mt-5">
+  <h1 class="mb-4">Réponse du Coach</h1>
 
-<p>Vous avez posé la question : <%= @question.present? ? @question : "Aucune question posée" %></p>
-<p>Réponse du coach : <%= @answer %></p>
+  <div class="card">
+    <div class="card-body">
+      <p><strong>Vous avez posé la question :</strong> <%= @question.present? ? @question : "Aucune question posée" %></p>
+      <p><strong>Réponse du coach :</strong> <%= @answer %></p>
+    </div>
+  </div>
+
+  <a href="/ask" class="btn btn-secondary mt-3">Poser une autre question</a>
+</div>
